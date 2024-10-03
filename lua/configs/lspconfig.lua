@@ -22,7 +22,7 @@ local function factorized_on_attach(_, bufnr)
 end
 
 lspconfig.intelephense.setup { cmd = { "intelephense", "--stdio" }, on_attach = factorized_on_attach }
-lspconfig.tsserver.setup     { on_attach = factorized_on_attach }
+lspconfig.ts_ls.setup     { on_attach = factorized_on_attach }
 lspconfig.lua_ls.setup{
   on_attach = factorized_on_attach,
   settings = {
