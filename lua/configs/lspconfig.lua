@@ -35,9 +35,3 @@ lspconfig.lua_ls.setup{
 }
 lspconfig.bashls.setup       { on_attach = factorized_on_attach }
 lspconfig.yamlls.setup       { on_attach = factorized_on_attach }
--- configuring single server, example: typescript
--- lspconfig.ts_ls.setup {
---   on_attach = nvlsp.on_attach,
---   on_init = nvlsp.on_init,
---   capabilities = nvlsp.capabilities,
--- }
