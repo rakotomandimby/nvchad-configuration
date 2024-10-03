@@ -1,5 +1,7 @@
 return {
   "natixgroup/code-ai.nvim",
+  event = 'VeryLazy',
+  lazy = false,
   dependencies = 'nvim-lua/plenary.nvim',
   opts = {
     gemini_agent_host='http://172.16.76.1:5000',
@@ -40,12 +42,10 @@ return {
         yaml_kubernetes_administrator = createPrompt('AIYAMLKubernetesAdmin'     , 'Act as a Kubernetes system administrator writing either YAML manifests, deployment YAML file or Service YAML file.'),
         yaml_symfony_configuration    = createPrompt('AIYAMLSymfonyConfiguration', 'Act as a Symfony developer writing YAML file in order to configure Symfony.'),
         lua_neovim_plugin             = createPrompt('AILuaNeovimPlugin'         , 'Act as a Lua software developer writing Neovim Plugin.'),
-        lua_neovim_configuration      = createPrompt('AILuaNeovimConfiguration'  , 'Act as a Lua software developer writing Neovim configuration.'),
+        lua_nvchad_neovim             = createPrompt('AILuaNvChadNeovimConfiguration'  , 'Act as a Lua software developer writing NvChad Neovim configuration.'),
         asterisk20                    = createPrompt('AIAsterisk20'              , 'Act as an Asterisk version 20 administrator writing Asterisk version 20 configuration for Asterisk version 20, using chan_pjsip but not chan_sip.'),
         asterisk18                    = createPrompt('AIAsterisk18'              , 'Act as an Asterisk version 18 administrator writing Asterisk version 18 configuration for Asterisk version 18, using chan_sip but not chan_pjsip.')
       }
     end)(),
-    event = 'VeryLazy',
-    lazy = false,
   }
 }
